@@ -1,0 +1,18 @@
+---------------------- Data Files ---------------------------------------------------------------------------------
+"buff_tran_1500.csv" --> All bus stops in each buffer
+"transit_counts_1500ft_after.csv" --> Tabulated bus ridership for each 10min period at each point of interest
+"uber_price_pit.csv" --> Raw Uber surge multiplier data
+"Uber_surge_spline.csv" --> Spline fit surge multiplier every 10 min for each point of interest
+"Pitt_Hourly_Weather_16-17.csv" --> Hourly weather data in Pittsburgh, PA from Weather Underground
+"penguins_games.csv" --> Penguins home schedule
+
+"Transit1500_NO_INRIX.csv" --> Compiled data at 10min resolution for 1500-ft buffer (No filtering)
+"Transit_df_1_2_1500_NO_INRIX.csv" --> Compiled data at 10 min resolution for 1500-ft buffer and 1.2 surge threshold (After filtering)
+"Transit_df_1_4_1500_NO_INRIX.csv" --> Compiled data at 10 min resolution for 1500-ft buffer and 1.4 surge threshold (After filtering)
+"Transit_df_1_6_1500_NO_INRIX.csv" --> Compiled data at 10 min resolution for 1500-ft buffer and 1.6 surge threshold (After filtering)
+
+------------------------- Code Files ------------------------------------------------------------------------------
+"Uber_Spline_Post.R" --> Use a spline to approximate surge multipliers at 10 min increments
+"Create_Dataframe_Post.R" --> Compile data from multiple sources into one data frame at 10 min resolution
+"Post_processing_Post.R" --> Run regression model for each location
+"Propensity_Score_Matching_Post.R" --> Propensity score matching robustness checks
